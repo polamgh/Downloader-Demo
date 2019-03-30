@@ -10,6 +10,7 @@ import UIKit
 
 extension UIImageView {
     func setImage(link: String) {
+        self.image = UIImage(named: "")
         Downloader(link: link).downloadFileAsync { (data, error) in
             if error == nil{
                 guard let imageData = data else{

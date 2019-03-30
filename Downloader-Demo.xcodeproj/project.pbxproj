@@ -13,8 +13,6 @@
 		2C78404A224E805000F5B0AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C784049224E805000F5B0AE /* Assets.xcassets */; };
 		2C78404D224E805000F5B0AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C78404B224E805000F5B0AE /* LaunchScreen.storyboard */; };
 		2C784058224E805100F5B0AE /* Downloader_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C784057224E805100F5B0AE /* Downloader_DemoTests.swift */; };
-		2C78406C224E80E000F5B0AE /* Dowloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C78406B224E80E000F5B0AE /* Dowloader.framework */; };
-		2C78406D224E80E000F5B0AE /* Dowloader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C78406B224E80E000F5B0AE /* Dowloader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2C784070224E836A00F5B0AE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C78406F224E836A00F5B0AE /* ImageLoader.swift */; };
 		2C784072224E90D000F5B0AE /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C784071224E90D000F5B0AE /* MainCollectionViewCell.swift */; };
 		2C78407B224EA86600F5B0AE /* Dowloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C78407A224EA86600F5B0AE /* Dowloader.swift */; };
@@ -38,7 +36,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2C78406D224E80E000F5B0AE /* Dowloader.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +53,6 @@
 		2C784053224E805100F5B0AE /* Downloader-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Downloader-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C784057224E805100F5B0AE /* Downloader_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader_DemoTests.swift; sourceTree = "<group>"; };
 		2C784059224E805100F5B0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C78406B224E80E000F5B0AE /* Dowloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dowloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C78406F224E836A00F5B0AE /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		2C784071224E90D000F5B0AE /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		2C78407A224EA86600F5B0AE /* Dowloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dowloader.swift; sourceTree = "<group>"; };
@@ -68,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C78406C224E80E000F5B0AE /* Dowloader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +80,6 @@
 		2C784036224E804F00F5B0AE = {
 			isa = PBXGroup;
 			children = (
-				2C78406B224E80E000F5B0AE /* Dowloader.framework */,
 				2C784041224E804F00F5B0AE /* Downloader-Demo */,
 				2C784056224E805100F5B0AE /* Downloader-DemoTests */,
 				2C784040224E804F00F5B0AE /* Products */,
@@ -407,6 +401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QF88W2GKT;
 				INFOPLIST_FILE = "Downloader-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,6 +420,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QF88W2GKT;
 				INFOPLIST_FILE = "Downloader-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

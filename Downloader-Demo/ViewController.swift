@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Dowloader
 
 class ViewController: UIViewController {
 
